@@ -41,6 +41,19 @@ class PhoneNumber(object):
 
         self.phn = self.validator(the_str)
 
+    def to_string(self):
+        """Returns a string of valid phone numbers """
+        self.valid_numbers()
+        recipients = self.phn
+        if isinstance(recipients, list):
+            user2 = ""
+            for user in recipients:
+                user2 = user2 + "," + str(user)
+            return user2[1:]
+
+        if len(recipients) == 13:
+            return recipients
+
     def validator(self, number):
         """ Validates the phone number and returns a phone number with a  +254 suffix"""
 
@@ -114,8 +127,3 @@ class InvalidPhoneNumberTypeException(Exception):
         if not message:
             self.message = "Invalid phone number data type"
         Exception.__init__(self)
-
-
-if __name__ == "__main__":
-    phn = PhoneNumber(704236788)
-    print phn.valid_numbers()
