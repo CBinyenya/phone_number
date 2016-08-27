@@ -1,5 +1,5 @@
 # phone_number
-Validates phone numbers and returns a list of numbers or string  with +254 suffix 
+Validates phone numbers and returns a list of numbers or string  with +254 prefix
 
 ##Dependecies
 Tested in python 2.4 to python 2.7.9
