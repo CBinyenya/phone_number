@@ -6,9 +6,11 @@ Tested in python 2.4 to python 2.7.9
 
 ## Installation
 Clone the project
+cd to the clone project and run the command:
+python setup.py install
 
 ## Usage
-1. from phonenumber import PhoneNumber
+1. from phn.phonenumber import PhoneNumber
 2. phn = PhoneNumber("07XXXXXXXX")
 3. phone = phn.valid_numbers()
 4. number_list = [7XXXXXXXXX, "07XXXXXXXX", "7XXXXXXXXX"]
