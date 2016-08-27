@@ -16,6 +16,7 @@ python setup.py install
 4. number_list = [7XXXXXXXXX, "07XXXXXXXX", "7XXXXXXXXX"]
 5. valid_list = PhoneNumber(number_list)
 6. valid_list = valid_list.valid_numbers()
+7. string_of_numbers = valid_list.to_string()
 
 ## Contributing
 
